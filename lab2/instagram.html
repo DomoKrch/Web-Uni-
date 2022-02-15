@@ -1,0 +1,171 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+      <title> Instagram Clone </title>
+      <style>
+        body {
+          background-color: rgb(250, 250, 250);
+        }
+
+        #pic {
+          position: absolute;
+          left: 400px;
+          top: 70px;
+          height: 600px;
+        }
+
+        #main {
+          height: 360px;
+          width: 300px;
+          position: absolute;
+          left: 800px;
+          top: 100px;
+          background-color: rgb(255, 255, 255);
+          border-width: 0.5px;
+        }
+
+        #second {
+          position: absolute;
+          width: 300px;
+          height: 40px;
+          left: 800px;
+          top: 490px;
+          background-color: rgb(255, 255, 255);
+          border-width: 0.5px;
+        }
+
+        #log {
+          background-color: rgb(0, 149, 246);
+          color: white;
+          font-weight: 400;
+          border-radius: 8px;
+          font-weight: bold;
+          width: 250px;
+          height: 30px;
+          position: absolute;
+          top: 170px;
+          left: 30px;
+        }
+
+        #pass {
+          background-color: rgb(250, 250, 250);
+          border-radius: 8px;
+          height: 30px;
+          width: 240px;
+          position: absolute;
+          left: 30px;
+          top: 120px;
+          border-width: 0.5px;
+        }
+
+        #email {
+          background-color: rgb(250, 250, 250);
+          border-radius: 8px;
+          height: 30px;
+          width: 240px;
+          position: absolute;
+          left: 30px;
+          top: 70px;
+          border-width: 0.5px;
+        }
+
+        #under {
+          font-family: sans-serif;
+          font-size: 14px;
+          font-weight: 400;
+          position: absolute;
+          left: 60px;
+        }
+
+        .link:hover {
+          text-decoration: underline;
+        }
+
+        .link {
+          font-weight: bold;
+        }
+
+        #sign {
+          color: rgb(115, 154, 246);
+        }
+
+        #logo {
+          position: absolute;
+          left: 880px;
+          top: 110px;
+          height: 55px;
+          width: 150px;
+          z-index: 1;
+        }
+
+        #app {
+          position: absolute;
+          top: 550px;
+          left: 930px;
+          font-size: 14px;
+          font-weight: 400;
+        }
+
+        #goog {
+          height: 60px;
+          width: 140px;
+          position: absolute;
+          top: 590px;
+          left: 810px;
+        }
+
+        #appl {
+          height: 60px;
+          width: 140px;
+          position: absolute;
+          top: 590px;
+          left: 980px;
+        }
+
+        #face {
+          color: rgb(56, 81, 133);
+          font-family: sans-serif;
+          font-weight: bold;
+          position: absolute;
+          top: 280px;
+          left: 75px;
+        }
+
+        #forg_pass {
+          position: absolute;
+          top: 310px;
+          left: 100px;
+          font-size: 14px;
+          font-weight: 400;
+          color: rgb(82, 55, 155)
+        }
+      </style>
+  </head>
+
+  <body>
+    <img id="pic" src="C:\Users\Owner\Desktop\Uni\spring_2022\web\labs\lab2\images\insta_pic.png">
+
+    <img id="logo" src="C:\Users\Owner\Desktop\Uni\spring_2022\web\labs\lab2\images\inst_logo.png">
+
+    <form>
+      <fieldset id="main">
+        <input id="email" type="email" placeholder="Phone number, username or email">
+        <input id="pass" type="password" placeholder="Password">
+        <input id="log" type="submit" value="Log in">
+
+        <p id="face"><span class="link">Log in with Facebook</span></p>
+        <p id="forg_pass"><span class="link">Forgot password?</span></p>
+      </fieldset>
+    </form>
+
+    <form>
+      <fieldset id="second">
+        <p id="under">Don't have an account? <a class="link"><span id="sign">Sign up</span></a></p>
+      </fieldset>
+    </form>
+
+    <p id="app">Get the app.</p>
+    <img id="goog" src="C:\Users\Owner\Desktop\Uni\spring_2022\web\labs\lab2\images\goog_inst.png">
+    <img id="appl" src="C:\Users\Owner\Desktop\Uni\spring_2022\web\labs\lab2\images\inst_appl.png">
+  </body>
+</html>
