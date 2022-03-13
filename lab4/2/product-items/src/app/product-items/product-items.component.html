@@ -1,0 +1,17 @@
+<h2>Product Items</h2>
+<ul class="product_items">
+  <li *ngFor="let product_item of product_items">
+    <span class="item">{{product_item.id}}</span>
+    <span class="name">{{product_item.name}}</span>
+    <span class="descr">{{product_item.descr}}</span>
+    <img class="img" src="{{product_item.imgSrc}}" alt="{{product_item.name}}"/>
+    <share-buttons theme="modern-dark"
+                   [include]="['telegram']"
+                   [showIcon]="true"
+                   [showText]="true"
+                   url={{product_item.link}}
+                   description="{{product_item.name}}"
+                   class="btn">
+    </share-buttons>
+  </li>
+</ul>
