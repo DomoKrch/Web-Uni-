@@ -1,0 +1,20 @@
+<ul class="product_items" *ngFor="let product_item of product_items">
+  <li *ngIf="product_item.category == category">
+      <span class="item">{{product_item.id}}</span>
+      <span class="name">{{product_item.name}}</span>
+      <span class="descr">{{product_item.descr}}</span>
+      <img class="img" src="{{product_item.imgSrc}}" alt="{{product_item.name}}"/>
+      <button class="like" (click)="increaseLike(product_item)">Like</button><br>
+      <p class="likeNum">{{product_item.likes}}</p>
+      <button class="remove" (click)="removeItem(product_item.name)">Remove</button>
+      <share-buttons theme="modern-dark"
+                     [include]="['telegram']"
+                     [showIcon]="true"
+                     [showText]="true"
+                     url={{product_item.link}}
+                     description="{{product_item.name}}"
+                     class="btn">
+      </share-buttons>
+  </li>
+</ul>
+

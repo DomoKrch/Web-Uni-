@@ -1,0 +1,14 @@
+<ul>
+  <li><input type="checkbox" [(ngModel)]="isSelHeadset"><span class="category">Headsets</span>
+    <app-product-items [category]="headset" *ngIf="isSelHeadset"></app-product-items>
+  </li>
+  <li><input type="checkbox" [(ngModel)]="isSelMic"><span class="category">Microphones</span><br>
+    <app-product-items [category]="microphone" *ngIf="isSelMic"></app-product-items>
+  </li>
+  <li><input type="checkbox" [(ngModel)]="isSelSpeaker"><span class="category">Speakers</span><br>
+    <app-product-items [category]="speaker" *ngIf="isSelSpeaker"></app-product-items>
+  </li>
+  <li><input type="checkbox" [(ngModel)]="isSelWebcam"><span class="category">Webcams</span><br>
+    <app-product-items [category]="webcam" *ngIf="isSelWebcam"></app-product-items>
+  </li>
+</ul>
